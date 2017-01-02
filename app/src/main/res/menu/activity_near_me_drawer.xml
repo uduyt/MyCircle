@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_near_me"
+            android:icon="@drawable/ic_near_me_black"
+            android:title="Cerca de mi" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_contacts_black"
+            android:title="Contactos" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chats_black"
+            android:title="Chat" />
+        <item
+            android:id="@+id/nav_circulos"
+            android:icon="@drawable/ic_public_circles_black"
+            android:title="Círculos" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ordenar por:"
+            android:id="@+id/textView"
+            android:textColor="@color/swatch200"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_order_by"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/swatch200"
+            android:textStyle="bold"
+             />
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radio de búsqueda (en metros):"
+        android:textColor="@color/swatch200"
+        android:id="@+id/tv_info_radio_filter" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp"
+        android:gravity="center_vertical">
+
+
+        <SeekBar
+            android:id="@+id/seekbar_distance"
+            android:max="5000"
+            android:progress="1000"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:thumbTint="@color/swatch200"
+            android:progressTint="@color/swatch200"
+            android:progressBackgroundTint="@color/swatch200"
+
+            />
+        <EditText
+            android:gravity="center"
+            android:id="@+id/et_seekbar"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            style="@style/FilterTextView"
+            android:theme="@style/FilterTextView"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
